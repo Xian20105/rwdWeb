@@ -1,0 +1,359 @@
+* {
+  box-sizing: border-box;
+}
+.bannerContainer{
+  background-color: white;
+  width:100%;
+  display: flex;
+  align-items: center;
+}
+.bannerBox{
+  width:100%;
+  height:70%;
+  display: flex;
+  justify-content: center;   
+  align-items: center;
+}
+.bannerInfo{
+  width:100%;
+  height: 5vh;
+  display: flex;
+  justify-content: center;   
+  align-items: center;
+  background-color: #270303;
+}
+.infoBox{
+  width:100%;
+  position: fixed;
+  height: 5vh;
+  display: flex;
+  justify-content: center;   
+  align-items: center;
+  background-color: #270303;
+}
+.textBox{
+  width:100%;
+  height:70%;
+  display: flex;
+  justify-content: end;   
+  align-items: center;
+  float:ri
+}
+.text{
+  text-align: center;
+}
+.textInfo{
+  color:white;
+  font-size: 1rem;
+  font-weight: 700;
+  font-family: 'arial', sans-serif;
+}
+H1{
+  margin-block-start: 0.67em;
+  margin-block-end: 0.67em;
+}
+H2{
+  margin-block-start: 0.67em;
+  margin-block-end: 0.67em;
+}
+.panels{
+display: flex;
+flex-direction: column;
+}
+.sectionContainer{
+  padding:1em 0em;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.nav{
+  display: flex;
+}
+.nav>li>a{
+  padding: 0 0.6em;
+  line-height: 2.5em;
+  font-weight: 700;
+  color: rgba(102, 102, 102, 0.85);
+}
+.nav>li>a>span{
+  color: #803705;
+  font-size:0.95rem;
+}
+.nav>li>a{
+  display: flex;
+  align-items: center;
+}
+.nav > li > a:hover span {
+  color: black;
+}
+.nav > li > a > .material-symbols-outlined {
+  font-size: 1.2rem;
+  margin-right: 0.2rem; 
+}
+#displayedImage{
+  display: flex;
+  justify-content: center;
+  background-color: rgb(66, 36, 36);
+  width:100%;
+  height:100%;
+}
+.text > p{
+  margin-bottom: 1em;
+}
+#menu-icon{
+  display: none;
+}
+.logoContainer{
+  text-align: center;
+}
+.iconContainer{
+  display: flex;
+  align-items: center;
+}
+.drop-down-menu{
+  width:100%;
+  height:70%;
+  display: flex;
+  justify-content: center;   
+  align-items: center;
+}
+.drop-down-menu>li>a{
+  padding:0.6em;
+  color:black;
+  display: flex;
+  align-items: center;
+}
+.drop-down-menu>li>a:hover{
+  color:#803705;
+}
+.drop-down-menu-sub>li:hover>a {
+  color: #803705;
+}
+
+ul.drop-down-menu li {
+  position: relative; 
+  z-index: 1;
+}
+ul.drop-down-menu ul {
+  width:100%;
+  opacity: 0;
+  position: absolute; 
+  background-color: white;
+  padding: 20px;
+  line-height:2.5em;
+  max-height: 0;
+  transition: 0.3s;
+}
+ul.drop-down-menu li:hover > ul {
+  opacity: 1;
+  max-height: 300px;
+}
+.carousel{
+  width:100%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+.imgContainer{
+  width:100%;
+  height: 100%;
+  display: flex;
+}
+.carousel-item{
+  max-width: 1920px;
+  max-height: 800px;
+}
+.sectionCategory{
+  width: 100%;
+  display:flex;
+  flex-direction: column;
+  padding:13px;
+}
+.categoryContainer{
+  padding-top:15px;
+}
+.categoryTitle{
+  text-align: center;
+  font-family: "Noto Sans TC", sans-serif;
+  font-size: calc(1.3rem * var(--font-size-title, 1));
+  margin-top: 1em;
+  color: rgba(0, 0, 0, 0.753);
+}
+.categoryItemContainer{
+  width:100%;
+  display:flex;
+  justify-content: center;
+  margin: auto;
+  padding:1em;
+}
+.categoryItemContainer > a{
+  padding:10px;
+}
+.categoryItemLogo{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+}
+.categoryItemLogo >img{
+  width:100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center center;
+}
+.categoryItemLogo > p{
+  padding:15px 0px 0px;
+  font-family: "Noto Sans TC", sans-serif;
+  font-weight:600;
+}
+.text{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding:0rem 1em;
+}
+.textButtonContainer{
+  display:flex;
+  justify-content: center;
+  padding:1em;
+}
+.textButton{
+  display:flex;
+  justify-content: center;
+  background-color: #803705;
+  color: white;
+  width:300px;
+  height:40px;
+  align-items: center;
+  cursor: pointer;
+  font-family: "Noto Sans TC", sans-serif;
+  font-size: calc(1rem * var(--font-size-paragraph, 1));
+}
+.textButton:hover{
+  background-color: white;
+  border: 1px solid #803705;
+  color: #803705;
+  cursor: pointer;
+  font-family: "Noto Sans TC", sans-serif;
+}
+.sectionProduct{
+  display: flex;
+  justify-content: center;
+}
+.productTitle{
+  font-family: "Noto Sans TC", sans-serif;
+  font-size: calc(1.3rem * var(--font-size-title, 1));
+  display: flex;
+  align-items: center;
+  padding:20px;
+}
+.sectionProduct{
+  padding:1em 1em;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding:13px;
+}
+.productList{
+  width: 90vw;
+  max-width: 1080px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.productItem{
+  width: calc(25%);
+  padding:5px;
+  cursor: pointer;
+  aspect-ratio: 1;
+}
+.productItem > img {
+  width:100%;
+  height: 100%;
+}
+#arrowUpward {
+  position :fixed;
+  bottom:20px;
+  right:20px;
+  padding:0.3rem;
+  font-size: 1.rem;
+  border:0.05rem solid #B7B7B7;
+  color:#B7B7B7;
+  background-color: white;
+  /
+}
+/*-------以下RWD設定 ------*/
+@media (max-width: 768px){
+.nav>li>a>span{
+  color: #803705;
+  font-size:0.8rem;
+}
+.nav{
+  display: none;
+}
+#menu-icon{
+  display: block;
+}
+.drop-down-menu>li>{
+  padding:1em;
+  color:black;
+  align-items: center;
+}
+.drop-down-menu>li>a{
+  padding:0.2em;
+  font-size: calc(0.75rem * var(--font-size-title, 1));
+}
+.drop-down-menu>li>ul{
+  font-size: calc(0.8rem * var(--font-size-title, 1));
+  padding:0.6rem 0.6rem;
+  color:black;
+  align-items: center;
+}
+#drop-down-icon{
+  font-size: 18px;
+}
+.categoryTitle{
+  text-align: center;
+  font-family: "Noto Sans TC", sans-serif;
+  font-size: calc(1rem * var(--font-size-title, 1));
+  font-weight:400;
+  margin-top: 1em;
+  color: rgba(0, 0, 0, 0.753);
+}
+.categoryItemContainer{
+  display:grid;
+  grid-template-columns: 30% 30% 30%;
+  margin: auto;
+  padding:1em;
+}
+.categoryItemContainer > a{
+  padding:0.3em;
+}
+.categoryItemLogo > p {
+  padding: 5px 0px 0px;
+  font-family: "Noto Sans TC", sans-serif;
+  font-weight: 400;
+  font-size:0.8rem;
+  height: 100%;
+}
+.text{
+  font-size:0.8rem;
+}
+.productTitle{
+  font-family: "Noto Sans TC", sans-serif;
+  font-size: calc(1rem * var(--font-size-title, 1));
+  display: flex;
+  align-items: center;
+  padding:20px;
+}
+.productList{
+  display: flex;
+  justify-content: center;
+}
+.productItem {
+  width: calc(50%);
+}
+
+}
